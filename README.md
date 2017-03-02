@@ -3,7 +3,7 @@
 
 A nicer iOS menu view circle.
 
-[![CI Status](http://img.shields.io/travis/Chi Phuong/CPMenuView.svg?style=flat)](https://travis-ci.org/Chi Phuong/CPMenuView)
+[![CI Status](https://travis-ci.org/at-phuongvnc/CPMenuView.svg?style=flat)](https://travis-ci.org/at-phuongvnc/CPMenuView)
 [![Version](https://img.shields.io/cocoapods/v/CPMenuView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
 [![License](https://img.shields.io/cocoapods/l/CPMenuView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
 [![Platform](https://img.shields.io/cocoapods/p/CPMenuView.svg?style=flat)](http://cocoapods.org/pods/CPMenuView)
@@ -27,7 +27,7 @@ CPMenuView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CPMenuView"
+pod "CPMenuView" ~> '1.0.0'
 ```
 ## Usage
 
