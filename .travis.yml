@@ -21,7 +21,7 @@ before_install:
 
 script:
 - set -o pipefail
-- xcodebuild clean test -workspace Example/CPMenuView.xcworkspace -scheme CPMenuView_Example -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -enableCodeCoverage YES | xcpretty
+- xcodebuild clean test -workspace Example/CPMenuView.xcworkspace -scheme CPMenuView-Example -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -enableCodeCoverage YES | xcpretty
 - pod lib lint --allow-warnings
 
   
