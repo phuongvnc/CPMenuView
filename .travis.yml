@@ -17,6 +17,6 @@ podfile: Example/Podfile
 #   pod repo update --silent
 #   pod install
 script:
--|
-    set -o pipefail
-    xcodebuild test -workspace Example/CPMenuView.xcworkspace -sdk iphonesimulator -scheme CPMenuView_Example -configuration Debug -destination "platform=iOS Simulator,name=iPhone 6" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+
+   - set -o pipefail
+   - xcodebuild test -workspace Example/CPMenuView.xcworkspace -sdk iphonesimulator -scheme CPMenuView_Example -configuration Debug -destination "platform=iOS Simulator,name=iPhone 6" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
