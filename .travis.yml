@@ -16,7 +16,12 @@ podfile: Example/Podfile
 #   bundle install
 #   pod repo update --silent
 #   pod install
-script:
+before_install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
-   - set -o pipefail
-   - xcodebuild test -workspace Example/CPMenuView.xcworkspace -sdk iphonesimulator -scheme CPMenuView_Example -configuration Debug -destination "platform=iOS Simulator,name=iPhone 6" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+script:
+- set -o pipefail
+- xcodebuild clean test -workspace Example/CPMenuView.xcworkspace -scheme CPMenuView_Example -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" -enableCodeCoverage YES | xcpretty
+- pod lib lint --allow-warnings
+
+  
