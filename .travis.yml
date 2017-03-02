@@ -13,4 +13,10 @@ language: objective-c
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-set -o pipefail && xcodebuild test -workspace Example/CPMenuView.xcworkspace -scheme CPMenuView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- |
+  if [ "$TEST_TYPE" = iOS ]; then
+    set -o pipefail
+    xcodebuild test -workspace ParseFacebookUtils.xcworkspace -sdk iphonesimulator -scheme ParseFacebookUtilsV4-iOS -configuration Debug -destination "platform=iOS Simulator,name=iPhone 4s" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+  elif [ "$TEST_TYPE" = CocoaPods ]; then
+    pod lib lint --use-libraries CPMenuView.podspec
+  fi
