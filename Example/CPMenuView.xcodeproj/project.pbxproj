@@ -15,7 +15,6 @@
 		513E6F191E67B28700686F49 /* CPMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F151E67B28700686F49 /* CPMenuButton.swift */; };
 		513E6F1A1E67B28700686F49 /* CPMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F161E67B28700686F49 /* CPMenuView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D52B1835A96DAD4C4B982EF9 /* Pods_CPMenuView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620E9B3C6DCB162848A82324 /* Pods_CPMenuView_Tests.framework */; };
 		E071BA32CC05BB872E7CD609 /* Pods_CPMenuView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7BE79506F406ADE23A07FD /* Pods_CPMenuView_Example.framework */; };
@@ -44,7 +43,6 @@
 		607FACD01AFB9204008FA782 /* CPMenuView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPMenuView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* CPMenuView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPMenuView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				513E6F0C1E67B20800686F49 /* Main.storyboard */,
 				513E6F0D1E67B20800686F49 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for CPMenuView";
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				513E6F0E1E67B20800686F49 /* Assets.xcassets in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				513E6F101E67B20800686F49 /* Main.storyboard in Resources */,
 				513E6F171E67B28700686F49 /* .gitkeep in Resources */,
 			);
@@ -407,17 +403,6 @@
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {

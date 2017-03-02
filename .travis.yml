@@ -1,37 +1,17 @@
 # references:
 # * http://www.objc.io/issue-6/travis-ci.html
 # * https://github.com/supermarin/xcpretty#usage
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode8.1
 language: objective-c
-osx_image: xcode8
-cache:
-  bundler: true
-  cocoapods: true
-  directories:
-    - ~/.rvm
-    - ~/.cocoapods
-    - .bundle
-    - vendor
-env:
-  global:
-    - WORKSPACE='SwiftUtils.xcworkspace'
-    - SCHEME='Framework'
-    - SDK='iphonesimulator10.0'
-    - DESTINATION='OS=10.0name=iPhone 6'
-install:
-  - set -o pipefail
-  - brew update
-  - ./scripts/setup
-  # workaround https://github.com/realm/SwiftLint/issues/13
-  - ln -s /Applications/Xcode-8.app /Applications/Xcode.app
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
 script:
-  - export REPO_SLUG="$TRAVIS_REPO_SLUG"
-  - export SRC_BRANCH="$(./scripts/src_branch)"
-  - export PR_NUMBER="$(./scripts/pr_number)"
-  - ./scripts/lint
-  - ./scripts/test
-  - ./scripts/pod_test
-  - bundle exec pod lib lint --quick
-notifications:
-  email: false
-after_success:
-  - ./scripts/codecov
+- set -o pipefail && xcodebuild test -workspace Example/CPMenuView.xcworkspace -scheme CPMenuView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint
