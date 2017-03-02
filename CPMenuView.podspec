@@ -8,34 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPMenuView'
-  s.version          = '1.0.0'
-  s.summary          = 'The CPMenu can help you create menu circle'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0.1'
+  s.summary          = 'Simple circle menu'
   s.homepage         = 'https://github.com/at-phuongvnc/CPMenuView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Chi Phuong' => 'vo.nguyen.chi.phuong@framgia.com' }
+  s.author           = { 'Chi Phuong' => 'vonguyenchiphuong@gmail.com' }
   s.source           = { :git => 'https://github.com/at-phuongvnc/CPMenuView.git', :tag => s.version.to_s }
-
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'CPMenuView/*'
-  
-  # s.resource_bundles = {
-  #   'CPMenuView' => ['CPMenuView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc = true
+  s.frameworks = 'UIKit'
 end
