@@ -9,14 +9,14 @@ osx_image: xcode8.1
 language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+before_install:
+- gem install cocoapods # Since Travis is not always on latest version
+- pod install 
 script:
 - |
   if [ "$TEST_TYPE" = iOS ]; then
     set -o pipefail
-    xcodebuild test -workspace ParseFacebookUtils.xcworkspace -sdk iphonesimulator -scheme ParseFacebookUtilsV4-iOS -configuration Debug -destination "platform=iOS Simulator,name=iPhone 4s" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
+    xcodebuild test -workspace Example/CPMenuView.xcworkspace -sdk iphonesimulator -scheme CPMenuView_Example -configuration Debug -destination "platform=iOS Simulator,name=iPhone 6" -destination "platform=iOS Simulator,name=iPhone 6 Plus" GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
   elif [ "$TEST_TYPE" = CocoaPods ]; then
     pod lib lint --use-libraries CPMenuView.podspec
   fi
