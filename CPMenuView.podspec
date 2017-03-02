@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CPMenuView'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of CPMenuView.'
+  s.summary          = 'The CPMenu can help you create menu circle'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
