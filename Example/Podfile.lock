@@ -1,0 +1,23 @@
+PODS:
+  - CPMenuView (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - CPMenuView (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  CPMenuView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPMenuView: 5eeb5990e7a6e8e8b88a5931dbd615da8e2b4598
+  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+
+PODFILE CHECKSUM: 4ca8a42eb3910bf91a71245a0d030455b0cd287c
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CPMenuView_Example' do
+  pod 'CPMenuView', :path => '../'
+
+  target 'CPMenuView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

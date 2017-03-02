@@ -1,0 +1,6 @@
+framework module CPMenuView {
+  umbrella header "CPMenuView-umbrella.h"
+
+  export *
+  module * { export * }
+}
