@@ -21,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 #### Manual install
 
-Drag and drop folder `Source` to your project.
+Drag and drop folder `CPMenuView` to your project.
 
 ## Installation
 
