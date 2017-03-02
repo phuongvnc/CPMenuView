@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Facebook Filled-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Like Filled-100.png",
       "scale" : "2x"
     },
     {

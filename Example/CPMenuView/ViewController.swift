@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     var isShow = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        let menuButton = HomeMenuButton(image: UIImage(named:"menu")!, size: CGSize(width: 70, height: 70))
+        let menuButton = HomeMenuButton(image: UIImage(named:"menu")!, size: CGSize(width: 50, height: 50))
         menuButton.pressedImage = UIImage(named: "close")
         let animator = CPMenuAnimator(commonDuration: 0.5, commonSpringWithDamping: 0.5, commonSpringVelocity: 10)
-        menuView = CPMenuView(parentView: self.view, homeButton: menuButton, animator: animator, type: .all, isClockWise: true)
+        menuView = CPMenuView(parentView: self.view, homeButton: menuButton, animator: animator,type: .all,radius: 130, isClockWise: true)
         menuView.delegate = self
         menuView.datasource = self
         menuView.setHomeButtonPosition(position: CGPoint(x: view.center.x, y: view.center.y - 100))
@@ -67,10 +67,10 @@ extension ViewController: CPMenuViewDataSource {
     }
 
     func menuView(_: CPMenuView, buttonAtIndex index: Int) -> SubMenuButton {
-        let subMenuButton = SubMenuButton(image: UIImage(named:"\(index)")!, size: CGSize(width: 50, height: 50))
-        subMenuButton.offset = 15
-        subMenuButton.backgroundColor = UIColor.init(red: 231/255.0, green: 76/255.0, blue: 60/255.0, alpha: 1)
-        subMenuButton.layer.cornerRadius = 25
+        let subMenuButton = SubMenuButton(image: UIImage(named:"\(index)")!, size: CGSize(width: 60, height: 60))
+        subMenuButton.offset = 20
+        subMenuButton.backgroundColor = UIColor.init(red: 243/255.0, green: 156/255.0, blue: 18/255.0, alpha: 1)
+        subMenuButton.layer.cornerRadius = subMenuButton.frame.height / 2
         subMenuButton.layer.masksToBounds = true
         return subMenuButton
     }

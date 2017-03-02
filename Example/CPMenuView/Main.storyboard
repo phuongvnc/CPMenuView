@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,17 +12,17 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CPMenuViewExpamle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CPMenuView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aN7-E1-ohl">
-                                <rect key="frame" x="88" y="501" width="198" height="29"/>
+                                <rect key="frame" x="108" y="570" width="198" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="kGb-X2-1UE"/>
                                     <constraint firstAttribute="width" constant="198" id="sHt-oO-EqD"/>
@@ -37,7 +37,7 @@
                                 </connections>
                             </segmentedControl>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r1T-QC-3KH">
-                                <rect key="frame" x="163" y="574" width="51" height="31"/>
+                                <rect key="frame" x="182.66666666666666" y="643" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="16E-cj-SMs"/>
                                     <constraint firstAttribute="width" constant="49" id="CBg-dh-1Va"/>
@@ -47,27 +47,27 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZm-tG-Ir9">
-                                <rect key="frame" x="166" y="472" width="42" height="21"/>
+                                <rect key="frame" x="186" y="541" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Xrx-AE-Qci"/>
                                     <constraint firstAttribute="width" constant="42" id="XwP-hZ-qFK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clockwise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-st-yJ9">
-                                <rect key="frame" x="121" y="545" width="133" height="21"/>
+                                <rect key="frame" x="140.66666666666669" y="614" width="133.00000000000006" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="897-OA-Xqi"/>
                                     <constraint firstAttribute="width" constant="133" id="MZR-Al-yXT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="r1T-QC-3KH" firstAttribute="top" secondItem="NAM-st-yJ9" secondAttribute="bottom" constant="8" id="5io-uk-Sc3"/>
                             <constraint firstItem="NAM-st-yJ9" firstAttribute="top" secondItem="aN7-E1-ohl" secondAttribute="bottom" constant="16" id="JDh-Cr-1to"/>

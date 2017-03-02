@@ -10,10 +10,10 @@
 		513E6F0E1E67B20800686F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513E6F081E67B20800686F49 /* Assets.xcassets */; };
 		513E6F101E67B20800686F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513E6F0C1E67B20800686F49 /* Main.storyboard */; };
 		513E6F111E67B20800686F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F0D1E67B20800686F49 /* ViewController.swift */; };
-		513E6F171E67B28700686F49 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 513E6F131E67B28700686F49 /* .gitkeep */; };
-		513E6F181E67B28700686F49 /* CPMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F141E67B28700686F49 /* CPMenuAnimator.swift */; };
-		513E6F191E67B28700686F49 /* CPMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F151E67B28700686F49 /* CPMenuButton.swift */; };
-		513E6F1A1E67B28700686F49 /* CPMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F161E67B28700686F49 /* CPMenuView.swift */; };
+		513E6F231E67FF2E00686F49 /* CPMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F201E67FF2E00686F49 /* CPMenuAnimator.swift */; };
+		513E6F241E67FF2E00686F49 /* CPMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F211E67FF2E00686F49 /* CPMenuButton.swift */; };
+		513E6F251E67FF2E00686F49 /* CPMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513E6F221E67FF2E00686F49 /* CPMenuView.swift */; };
+		513E6F271E67FFD300686F49 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513E6F261E67FFD300686F49 /* Launch Screen.storyboard */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D52B1835A96DAD4C4B982EF9 /* Pods_CPMenuView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620E9B3C6DCB162848A82324 /* Pods_CPMenuView_Tests.framework */; };
@@ -36,10 +36,10 @@
 		513E6F081E67B20800686F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513E6F0C1E67B20800686F49 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		513E6F0D1E67B20800686F49 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		513E6F131E67B28700686F49 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		513E6F141E67B28700686F49 /* CPMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuAnimator.swift; sourceTree = "<group>"; };
-		513E6F151E67B28700686F49 /* CPMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuButton.swift; sourceTree = "<group>"; };
-		513E6F161E67B28700686F49 /* CPMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuView.swift; sourceTree = "<group>"; };
+		513E6F201E67FF2E00686F49 /* CPMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuAnimator.swift; sourceTree = "<group>"; };
+		513E6F211E67FF2E00686F49 /* CPMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuButton.swift; sourceTree = "<group>"; };
+		513E6F221E67FF2E00686F49 /* CPMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPMenuView.swift; sourceTree = "<group>"; };
+		513E6F261E67FFD300686F49 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CPMenuView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPMenuView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,21 +84,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		513E6F121E67B28700686F49 /* Classes */ = {
+		513E6F1F1E67FF2E00686F49 /* CPMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				513E6F131E67B28700686F49 /* .gitkeep */,
-				513E6F141E67B28700686F49 /* CPMenuAnimator.swift */,
-				513E6F151E67B28700686F49 /* CPMenuButton.swift */,
-				513E6F161E67B28700686F49 /* CPMenuView.swift */,
+				513E6F201E67FF2E00686F49 /* CPMenuAnimator.swift */,
+				513E6F211E67FF2E00686F49 /* CPMenuButton.swift */,
+				513E6F221E67FF2E00686F49 /* CPMenuView.swift */,
 			);
-			path = Classes;
+			name = CPMenuView;
+			path = ../CPMenuView;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				513E6F121E67B28700686F49 /* Classes */,
+				513E6F1F1E67FF2E00686F49 /* CPMenuView */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CPMenuView */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -125,6 +125,7 @@
 				513E6F0D1E67B20800686F49 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				513E6F261E67FFD300686F49 /* Launch Screen.storyboard */,
 			);
 			name = "Example for CPMenuView";
 			path = CPMenuView;
@@ -265,9 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513E6F271E67FFD300686F49 /* Launch Screen.storyboard in Resources */,
 				513E6F0E1E67B20800686F49 /* Assets.xcassets in Resources */,
 				513E6F101E67B20800686F49 /* Main.storyboard in Resources */,
-				513E6F171E67B28700686F49 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +380,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				513E6F111E67B20800686F49 /* ViewController.swift in Sources */,
-				513E6F191E67B28700686F49 /* CPMenuButton.swift in Sources */,
+				513E6F241E67FF2E00686F49 /* CPMenuButton.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				513E6F181E67B28700686F49 /* CPMenuAnimator.swift in Sources */,
-				513E6F1A1E67B28700686F49 /* CPMenuView.swift in Sources */,
+				513E6F231E67FF2E00686F49 /* CPMenuAnimator.swift in Sources */,
+				513E6F251E67FF2E00686F49 /* CPMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

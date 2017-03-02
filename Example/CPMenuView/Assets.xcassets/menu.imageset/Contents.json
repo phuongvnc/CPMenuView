@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Xbox Menu-50 (1).png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Menu Filled-100.png",
       "scale" : "2x"
     },
     {

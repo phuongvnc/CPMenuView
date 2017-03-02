@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Apple Filled-50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Exterior Filled-100.png",
       "scale" : "2x"
     },
     {

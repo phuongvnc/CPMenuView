@@ -54,7 +54,7 @@ extension CPMenuAnimator: CPMenuAnimationProtocol {
     }
 
    public func animationHomeButton(homeButton: HomeMenuButton, state: CPMenuViewState, completion: (() -> Void)?) {
-        let scale: CGFloat = state == .expand ? 1.0 : 0.7
+        let scale: CGFloat = state == .expand ? 1.0 : 0.9
         let transform = CGAffineTransform(scaleX: scale, y: scale)
         animation(delay: 0, animation: {
             homeButton.transform = transform
