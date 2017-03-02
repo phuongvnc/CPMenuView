@@ -17,13 +17,13 @@ env:
     - TEST_TYPE=Package
 cache: cocoapods
 podfile: Example/Podfile
-before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-install:
-- |
-  bundle install
-  pod repo update --silent
-  pod install
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# install:
+# - |
+#   bundle install
+#   pod repo update --silent
+#   pod install
 script:
 - |
   if [ "$TEST_TYPE" = iOS ]; then
