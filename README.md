@@ -33,6 +33,31 @@ pod "CPMenuView" ~> '1.0.0'
 ```
 ## Usage
 
+You can create and custom home button 
+```Swift
+let menuButton = HomeMenuButton(image: UIImage(named:"menu")!, size: CGSize(width: 50, height: 50))
+menuButton.pressedImage = UIImage(named: "close")
+```
+
+Set animation of menu 
+```Swift
+let animator = CPMenuAnimator(commonDuration: 0.5, commonSpringWithDamping: 0.5, commonSpringVelocity: 10)
+```
+Create menu view 
+
+```Swift
+menuView = CPMenuView(parentView: self.view, homeButton: menuButton, animator: animator,type: .all,radius: 130, isClockWise: true)
+menuView.delegate = self
+menuView.datasource = self
+```
+You need set position for home button
+```Swift
+menuView.setHomeButtonPosition(position: CGPoint(x: view.center.x, y: view.center.y - 100))
+```
+
+## Contributing
+
+Contributions for bug fixing or improvements are welcome. Feel free to submit a pull request.
 
 ## Author
 
