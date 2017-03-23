@@ -14,13 +14,18 @@ public protocol CPMenuAnimationProtocol {
     func animationHideSubMenuButton(subButtons: [SubMenuButton], completion: (() -> Void)?)
 }
 
-struct CPMenuAnimator {
-    var commonDuration: TimeInterval = 0.5
-    var commonSpringWithDamping: CGFloat = 0.5
-    var commonSpringVelocity:CGFloat = 0
-
-    func animation(delay: TimeInterval,animation: @escaping () -> Void, completion: @escaping (Bool) -> Void) {
-        UIView.animate(withDuration: commonDuration, delay: delay, usingSpringWithDamping: commonSpringWithDamping, initialSpringVelocity: commonSpringVelocity, options: UIViewAnimationOptions.curveEaseInOut, animations: animation, completion: completion)
+public struct CPMenuAnimator {
+    public var commonDuration: TimeInterval!
+    public var commonSpringWithDamping: CGFloat!
+    public var commonSpringVelocity:CGFloat!
+    
+    public init(commonDuration:TimeInterval = 0.5,commonSpringWithDamping:CGFloat = 0.5 ,commonSpringVelocity:CGFloat = 0){
+        self.commonDuration = commonDuration
+        self.commonSpringWithDamping = commonSpringWithDamping
+        self.commonSpringVelocity = commonSpringVelocity
+    }
+    public func animation(delay: TimeInterval,animation: @escaping () -> Void, completion: @escaping (Bool) -> Void) {
+        UIView.animate(withDuration: commonDuration!, delay: delay, usingSpringWithDamping: commonSpringWithDamping, initialSpringVelocity: commonSpringVelocity, options: UIViewAnimationOptions.curveEaseInOut, animations: animation, completion: completion)
     }
 }
 
