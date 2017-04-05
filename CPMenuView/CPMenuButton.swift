@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol CPSubMenuButtonProtocol {
+public protocol CPSubMenuButtonProtocol {
     var index: Int { get set }
     var startPosition: CGPoint? { get set }
     var endPosition: CGPoint? { get set }
 }
 
-protocol CPMenuButtonDelegate: class {
+public protocol CPMenuButtonDelegate: class {
     func didSelectButton(sender: CPMenuButton)
 }
 
@@ -26,16 +26,16 @@ public class CPMenuButton: UIView {
         return imageView
     }()
 
-    weak var delegate: CPMenuButtonDelegate?
+    public weak var delegate: CPMenuButtonDelegate?
 
 
-    var image: UIImage? {
+    public var image: UIImage? {
         didSet {
             setUpImageView()
         }
     }
 
-    var size: CGSize? {
+    public var size: CGSize? {
         didSet {
             if let size = size {
                 frame.size = size
@@ -43,7 +43,7 @@ public class CPMenuButton: UIView {
         }
     }
 
-    var offset: CGFloat = 0 {
+    public var offset: CGFloat = 0 {
         didSet {
             let sizeImage = CGSize(width: frame.size.width - offset , height: frame.size.height - offset)
             menuImageView.frame.size = sizeImage
@@ -52,7 +52,7 @@ public class CPMenuButton: UIView {
     }
 
 
-    init(image: UIImage, size: CGSize? = nil) {
+    public init(image: UIImage, size: CGSize? = nil) {
         super.init(frame: CGRect.zero)
         self.image = image
         self.size = size
@@ -71,7 +71,7 @@ public class CPMenuButton: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setUpImageView() {
+    func setUpImageView() {
         menuImageView.image = image
     }
 
@@ -81,16 +81,16 @@ public class CPMenuButton: UIView {
 }
 
 public class SubMenuButton: CPMenuButton, CPSubMenuButtonProtocol {
-    var index = 0
-    var startPosition: CGPoint?
-    var endPosition: CGPoint?
+    public var index = 0
+    public var startPosition: CGPoint?
+    public var endPosition: CGPoint?
 }
 
 public class HomeMenuButton: CPMenuButton {
-    var pressedImage: UIImage?
-    var notPressedImage: UIImage?
+    public var pressedImage: UIImage?
+    public var notPressedImage: UIImage?
 
-    func markAsPressed(_ pressed: Bool) {
+    public func markAsPressed(_ pressed: Bool) {
         notPressedImage = notPressedImage ?? image
         image = pressed ? pressedImage : notPressedImage
     }

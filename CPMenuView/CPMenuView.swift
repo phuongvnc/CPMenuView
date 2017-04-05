@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum CPMenuType {
+public enum CPMenuType {
     case all
     case half
     case quarter
@@ -19,26 +19,26 @@ public enum CPMenuViewState {
     case expand
 }
 
-protocol CPMenuViewDelegate: class {
+public protocol CPMenuViewDelegate: class {
     func menuView(_ menuView: CPMenuView, didSelectButtonAtIndex index: Int)
     func menuView(_ menuView: CPMenuView, didSelectHomeButtonState state: CPMenuViewState)
 }
 
-protocol CPMenuViewDataSource: class {
+public protocol CPMenuViewDataSource: class {
     func menuViewNumberOfItems() -> Int
     func menuView(_ : CPMenuView, buttonAtIndex index: Int) -> SubMenuButton
 }
 
-class CPMenuView {
+public class CPMenuView {
 
     fileprivate var parentView: UIView?
     fileprivate var homeButton: HomeMenuButton?
     fileprivate var animator: CPMenuAnimator?
     fileprivate var menuButtons:[SubMenuButton] = []
 
-    var type: CPMenuType = .all
-    var isClockWise = true // Default is clockwise
-    var radius: Double = 100 // Default radius
+    public var type: CPMenuType = .all
+    public var isClockWise = true // Default is clockwise
+    public var radius: Double = 100 // Default radius
 
     fileprivate(set) var state: CPMenuViewState = .none {
         didSet {
@@ -48,8 +48,8 @@ class CPMenuView {
         }
     }
 
-    var datasource: CPMenuViewDataSource?
-    var delegate: CPMenuViewDelegate?
+    public var datasource: CPMenuViewDataSource?
+    public var delegate: CPMenuViewDelegate?
 
 
 
@@ -89,7 +89,7 @@ class CPMenuView {
     }
 
 
-    func reloadButton() {
+    public func reloadButton() {
         state = .none
         removeButton()
         addButton()
@@ -148,7 +148,7 @@ class CPMenuView {
     }
 
 
-    func setHomeButtonPosition(position: CGPoint) {
+    public func setHomeButtonPosition(position: CGPoint) {
         homeButton?.center = position
         reloadButton()
     }
@@ -157,7 +157,7 @@ class CPMenuView {
 }
 
 extension CPMenuView: CPMenuButtonDelegate {
-    func didSelectButton(sender: CPMenuButton) {
+    public func didSelectButton(sender: CPMenuButton) {
         if let subMenuButton = sender as? SubMenuButton, let indexOfItem = menuButtons.index(of: subMenuButton) {
             state = .none
             delegate?.menuView(self, didSelectButtonAtIndex: indexOfItem)
@@ -167,4 +167,5 @@ extension CPMenuView: CPMenuButtonDelegate {
         }
     }
 }
+
 
