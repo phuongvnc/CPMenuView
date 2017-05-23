@@ -29,7 +29,7 @@ CPMenuView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CPMenuView" ~> '1.0.1'
+pod 'CPMenuView', '~> 1.0.2'
 ```
 ## Usage
 
