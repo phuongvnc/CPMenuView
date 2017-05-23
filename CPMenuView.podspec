@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPMenuView'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Simple circle menu'
-  s.homepage         = 'https://github.com/at-phuongvnc/CPMenuView'
+  s.homepage         = 'https://github.com/phuongvnc/CPMenuView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chi Phuong' => 'vonguyenchiphuong@gmail.com' }
-  s.source           = { :git => 'https://github.com/at-phuongvnc/CPMenuView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/phuongvnc/CPMenuView.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'CPMenuView/*'
   s.requires_arc = true
