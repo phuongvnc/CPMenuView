@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,14 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aN7-E1-ohl">
-                                <rect key="frame" x="108" y="570" width="198" height="29"/>
+                                <rect key="frame" x="20" y="570" width="374" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="kGb-X2-1UE"/>
-                                    <constraint firstAttribute="width" constant="198" id="sHt-oO-EqD"/>
+                                    <constraint firstAttribute="width" constant="374" id="sHt-oO-EqD"/>
                                 </constraints>
                                 <segments>
                                     <segment title="All"/>
                                     <segment title="Half"/>
+                                    <segment title="Upper half"/>
+                                    <segment title="Lower half"/>
                                     <segment title="Quarter"/>
                                 </segments>
                                 <connections>
@@ -82,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="43.628185907046479"/>
+            <point key="canvasLocation" x="44.927536231884062" y="43.206521739130437"/>
         </scene>
     </scenes>
 </document>

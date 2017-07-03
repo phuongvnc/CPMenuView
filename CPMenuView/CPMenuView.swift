@@ -11,6 +11,8 @@ import UIKit
 public enum CPMenuType {
     case all
     case half
+    case upperhalf
+    case lowerhalf
     case quarter
 }
 
@@ -119,8 +121,21 @@ public class CPMenuView {
         var index = 0
         let center = CGPoint(x: homeButton!.frame.midX, y: homeButton!.frame.midY)
         menuButtons.forEach { (item) in
-            let x = Double(center.x) + sin(Double(index) * theta) * radius * flip
-            let y = Double(center.y) - cos(Double(index) * theta) * radius
+            var x = 0.0
+            var y = 0.0
+            if type == .upperhalf  {
+                x = Double(center.x) - cos(Double(index) * theta) * radius * flip
+                y = Double(center.y) - sin(Double(index) * theta) * radius
+
+            } else if type == .lowerhalf {
+                x = Double(center.x) + cos(Double(index) * theta) * radius * flip
+                y = Double(center.y) + sin(Double(index) * theta) * radius
+
+            } else {
+                x = Double(center.x) + sin(Double(index) * theta) * radius * flip
+                y = Double(center.y) - cos(Double(index) * theta) * radius
+            }
+
             item.center = center
             item.startPosition = center
             item.endPosition = CGPoint(x: x, y: y)
@@ -137,6 +152,10 @@ public class CPMenuView {
         case .all:
             return 2 * M_PI / (numberItem + 1)
         case .half:
+            return M_PI / numberItem
+        case .upperhalf:
+            return M_PI / numberItem
+        case .lowerhalf:
             return M_PI / numberItem
         case .quarter:
             return M_PI_2 / numberItem
