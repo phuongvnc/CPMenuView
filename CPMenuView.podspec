@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.name             = 'CPMenuView'
-  s.version          = '1.0.2'
+  s.version          = ‘1.1.0’
   s.summary          = 'Simple circle menu'
   s.homepage         = 'https://github.com/phuongvnc/CPMenuView'
   s.requires_arc = true
