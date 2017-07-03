@@ -42,6 +42,12 @@ class ViewController: UIViewController {
         case 1:
             type = .half
             break
+        case 2:
+            type = .upperhalf
+            break
+        case 3:
+            type = .lowerhalf
+            break
         default:
             type = .quarter
             break
